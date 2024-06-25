@@ -63,8 +63,15 @@
 
 -> Groq instead of OpenAI...
 -> Building an interface with streamlit
--> TRY TO ANALYZE why I do not have the same answers lik ehe
+-> TRY TO ANALYZE why I do not have the same answers like he: I should have a look on the document_context
 
+Now it's time for an opensource LLM:
+-> ollama
+    curl -fsSL https://ollama.com/install.sh | sh
+    ollama start
+    ollama serve phi3
+
+-> we created a new codespace for it (more powerfull)
 
 
 
