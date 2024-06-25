@@ -74,7 +74,8 @@ Now it's time for an opensource LLM:
 
 -> we created a new codespace for it (more powerfull)
 
--> run jupyter notebook, indexing the data, run the app
+-> run jupyter notebook, indexing the data, run the app, because indexing is made in Jupater Notebook
+    -> It is surely possible to programme an index in the VCS
 
 
 
