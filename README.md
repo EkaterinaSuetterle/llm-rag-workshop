@@ -20,7 +20,7 @@
     "direnv: loading /workspaces/llm-rag-workshop/.envrc
     direnv: export +OPENAI_API_KEY"
 
--> then run the command "pipenv run jupater notebook"
+-> then run the command "pipenv run jupyter notebook"
 -> now we create an elastic search (is a text search engine) image (Docker) with the following code in a new terminal:
     docker run -it \
     --rm \
@@ -50,6 +50,21 @@
 
 -> Analyzer in elastic search is by default case insensitive an dturns everything in lower case.
     It also drops all the "meaningless" words like 'a', 'the', probably 'can', etc.
+
+-> To commit something (for the whole project):
+    OPTIONAL
+        cd path/to/your/project
+    Only for some docs
+        git add path/to/file
+    For all docs in the branch
+        git add .
+    git commit -m "Fixed bug in user login feature"
+    git push
+
+-> Groq instead of OpenAI...
+-> Building an interface with streamlit
+-> TRY TO ANALYZE why I do not have the same answers lik ehe
+
 
 
 
