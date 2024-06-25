@@ -1,22 +1,20 @@
 import streamlit as st
 
-def qa_bot(prompt):
-    import time
-    time.sleep(2)
-    return f"Response for the prompt: {prompt}"
+from qa_bot import qa_bot
 
-def main():
-    st.title("DTC Q&A System")
+# https://chatgpt.com/share/53192091-232a-491d-9cd3-aa510390dc1a
 
-    with st.form(key='rag_form'):
-        prompt = st.text_input("Enter your prompt")
-        response_placeholder = st.empty()
-        submit_button = st.form_submit_button(label='Submit')
+# Streamlit UI
+st.title("RAG Function Invoker")
 
-    if submit_button:
-        response_placeholder.markdown("Loading...")
-        response = qa_bot(prompt)
-        response_placeholder.markdown(response)
+# Input box for user query
+user_query = st.text_input("Enter your query:")
 
-if __name__ == "__main__":
-    main()
+# Button to invoke the function
+if st.button("Run RAG Function"):
+    with st.spinner('Processing...'):
+        result = qa_bot(user_query)
+        st.success("Done!")
+        # Output for showing the results
+        st.write(result)
+    

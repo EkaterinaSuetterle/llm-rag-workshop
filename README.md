@@ -30,6 +30,7 @@
     -e "discovery.type=single-node" \
     -e "xpack.security.enabled=false" \
     docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+-> --rm \ is for deleting the container once we ended our CodeSpace
 
 -> If you get "Elasticsearch has quit unexpectedly", give it more RAM:
 
@@ -72,6 +73,8 @@ Now it's time for an opensource LLM:
     ollama serve phi3
 
 -> we created a new codespace for it (more powerfull)
+
+-> run jupyter notebook, indexing the data, run the app
 
 
 
