@@ -47,7 +47,7 @@
 -> Then we change the host:
     curl http://localhost:9200
 
--> Further steps are dosumented in Jupyter Notebook
+-> Further steps are documented in Jupyter Notebook
 
 -> Analyzer in elastic search is by default case insensitive an dturns everything in lower case.
     It also drops all the "meaningless" words like 'a', 'the', probably 'can', etc.
@@ -74,8 +74,11 @@ Now it's time for an opensource LLM:
 
 -> we created a new codespace for it (more powerfull)
 
--> run jupyter notebook, indexing the data, run the app, because indexing is made in Jupater Notebook
+-> run jupyter notebook, indexing the data, run the app, because indexing is made in Jupyter Notebook
     -> It is surely possible to programme an index in the VCS
+
+-> to run the app.py
+    -> streamlit run app.py
 
 
 

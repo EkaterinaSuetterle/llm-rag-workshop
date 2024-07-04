@@ -22,8 +22,8 @@ Answer: {text}
 prompt_template = """
 You're a course teaching assistant.
 Answer the user QUESTION based on CONTEXT - the documents retrieved from our FAQ database.
-Don't use other information outside of the provided CONTEXT.
-In case you do not have the CONTEXT, tell the user that you do not know that.
+Also use other information outside of the provided CONTEXT,
+in case you do not have the CONTEXT.
 
 QUESTION: {user_question}
 
